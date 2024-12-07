@@ -1,1 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 
+
+body{
+    background: linear-gradient(#0E533E, #1FB98A);
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.ball_1{
+    background: linear-gradient(-164deg, #B4214E, #9E072A, #38020F);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: 14px;
+    left: 218px;
+}
+.ball_2{
+    background: linear-gradient(133deg, #B4214E, #9E072A, #38020F);
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    position: absolute;
+    top: 152px;
+    left: 767px;
+}
