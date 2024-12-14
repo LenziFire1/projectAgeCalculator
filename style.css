@@ -28,3 +28,67 @@ body{
     top: 152px;
     left: 767px;
 }
+.ball_3{
+    background: linear-gradient(-124deg, #B4214E, #9E072A, #38020F);
+    width: 140px;
+    height: 136px;
+    border-radius: 50%;
+    position: absolute;
+    top: 458px;
+    left: 174px;
+    
+}
+.ball_4{
+    background: linear-gradient(242deg, #06D6FD, #0899F9, #055A93);
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    position: absolute; 
+    top: 175px;
+    left: 476px;
+}
+.ball_5{
+    background: linear-gradient(50deg, #06D6FD, #0899F9, #055A93);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 500px;
+    left: 609px;
+}
+.ball_6{
+    background: linear-gradient(122deg, #06D6FD, #0899F9, #055A93);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    top: 409px;
+    left: 1182px;
+}
+.ball_7{
+    background: linear-gradient(27deg, #E8B74B, #CE8F2F , #B56D16);
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    position: absolute;
+    top: 200px;
+    left: 19px;
+}
+.ball_8{
+    background: linear-gradient(30deg,#E8B74B, #CE8F2F , #B56D16);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    top: 444px;
+    left: 898px;
+}
+.ball_9{
+    background: linear-gradient(127deg,#E8B74B, #CE8F2F , #B56D16);
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    top: 71px;
+    left: 1152px;
+}
