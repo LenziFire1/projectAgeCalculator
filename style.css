@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -9,6 +10,7 @@ body{
     width: 100vw;
     height: 100vh;
     position: relative;
+    font-family: "Inter", sans-serif;
 }
 .ball_1{
     background: linear-gradient(-164deg, #B4214E, #9E072A, #38020F);
@@ -92,3 +94,17 @@ body{
     top: 71px;
     left: 1152px;
 }
+
+h1{
+    color: white;
+    margin-top:px;
+    margin-left:150px;
+    font-weight: 800;
+    font-size: 64px;
+    z-index: 1;
+}
+
+.yellow{
+    color: #FFEA00;
+}
+
