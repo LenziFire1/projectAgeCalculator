@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
 }
-
 
 body{
     background: linear-gradient(#0E533E, #1FB98A);
@@ -12,6 +12,7 @@ body{
     position: relative;
     font-family: "Inter", sans-serif;
 }
+
 .ball_1{
     background: linear-gradient(-164deg, #B4214E, #9E072A, #38020F);
     width: 80px;
@@ -20,7 +21,8 @@ body{
     position: absolute;
     top: 14px;
     left: 218px;
-}
+    }
+
 .ball_2{
     background: linear-gradient(133deg, #B4214E, #9E072A, #38020F);
     width: 140px;
@@ -30,6 +32,7 @@ body{
     top: 152px;
     left: 767px;
 }
+
 .ball_3{
     background: linear-gradient(-124deg, #B4214E, #9E072A, #38020F);
     width: 140px;
@@ -37,9 +40,9 @@ body{
     border-radius: 50%;
     position: absolute;
     top: 458px;
-    left: 174px;
-    
+    left: 174px;    
 }
+
 .ball_4{
     background: linear-gradient(242deg, #06D6FD, #0899F9, #055A93);
     width: 75px;
@@ -49,6 +52,7 @@ body{
     top: 175px;
     left: 476px;
 }
+
 .ball_5{
     background: linear-gradient(50deg, #06D6FD, #0899F9, #055A93);
     width: 100px;
@@ -58,6 +62,7 @@ body{
     top: 500px;
     left: 609px;
 }
+
 .ball_6{
     background: linear-gradient(122deg, #06D6FD, #0899F9, #055A93);
     width: 120px;
@@ -67,6 +72,7 @@ body{
     top: 409px;
     left: 1182px;
 }
+
 .ball_7{
     background: linear-gradient(27deg, #E8B74B, #CE8F2F , #B56D16);
     width: 140px;
@@ -76,6 +82,7 @@ body{
     top: 200px;
     left: 19px;
 }
+
 .ball_8{
     background: linear-gradient(30deg,#E8B74B, #CE8F2F , #B56D16);
     width: 120px;
@@ -85,6 +92,7 @@ body{
     top: 444px;
     left: 898px;
 }
+
 .ball_9{
     background: linear-gradient(127deg,#E8B74B, #CE8F2F , #B56D16);
     width: 90px;
@@ -96,12 +104,14 @@ body{
 }
 
 h1{
+    position: relative;
+    width: 500px;
     color: white;
-    margin-top:px;
+    padding-top:100px;
     margin-left:150px;
     font-weight: 800;
     font-size: 64px;
-    z-index: 1;
+    z-index: 999;
 }
 
 .yellow{
