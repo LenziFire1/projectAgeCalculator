@@ -118,3 +118,59 @@ h1{
     color: #FFEA00;
 }
 
+.date{
+
+    position: absolute;
+    left: 148px;
+    top: 230px;
+    background-color: rgb(225, 255, 255, 0.5);
+    border-radius: 10px;
+    width: 528px;
+    height: 102px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 800;
+    color: #000000;
+    background-color: #FFEA00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 117px;
+    height: 54px;
+    text-align: center;
+  }
+  
+  form{
+    width: 528px;
+    height: 102px;
+    display: flex;
+    justify-content:center ;
+    gap: 20px;
+    align-items: center;
+  }
+  input{
+    width: 310px;
+    height: 54px;
+    font-size: 24px;    
+    border-radius: 10px;
+    text-align: center;
+  }
+  h2{
+    position: relative;
+    width: 500px;
+    color: white;
+    padding-top:175px;
+    margin-left:160px;
+    font-weight: 800;
+    font-size: 24px;
+  }
+  
+
+
+
+
+
+
