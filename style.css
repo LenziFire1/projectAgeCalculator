@@ -118,8 +118,7 @@ h1{
     color: #FFEA00;
 }
 
-.date{
-
+.container{
     position: absolute;
     left: 148px;
     top: 230px;
@@ -162,7 +161,7 @@ button {
     position: relative;
     width: 500px;
     color: white;
-    margin-top:100px;
+    margin-top:175px;
     margin-left:160px;
     font-weight: 800;
     font-size: 24px;
