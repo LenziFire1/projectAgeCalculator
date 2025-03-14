@@ -10,31 +10,42 @@ let date = document.querySelector(".date");
 let currentDate = new Date();
 console.log(currentDate);
 
+btn.addEventListener('click', function(e) {
+    e.preventDefault();  
 
-
-btn.addEventListener('click', function() {
     let newDate = date.value;
     let year = newDate.slice(0,4);
-    let months = +newDate.slice(5,7);
-    console.log(months)
-    console.log(typeof(months))
-
-    let day = newDate.slice(8,10);
+    let inputMonth = +newDate.slice(5,7); 
+    let day = +newDate.slice(8,10);
 
     let yearToday = currentDate.getFullYear();
     let monthsToday = currentDate.getMonth() + 1;
-    console.log(monthsToday)
     let dayToday = currentDate.getDate();
     
-    let inputYear = yearToday  - year;
+    let inputYear = yearToday - year;
     
-    if (monthsToday >= months){
-        months.innerHTML =  monthsToday - months  ;         
-    } 
-    else {
+    if (monthsToday >= inputMonth) {
+        months.innerHTML = monthsToday - inputMonth;         
+    } else {
         inputYear -= 1;
-        months.innerHTML =  12 + monthsToday - months;
+        months.innerHTML = 12 + monthsToday - inputMonth;
     }
 
-    years.innerHTML = inputYear  
-})
+    if (dayToday >= day) {
+        days.innerHTML = dayToday - day;         
+    } else {
+        months.innerHTML -= 1;
+
+        let prevMonth = monthsToday - 1;
+        let prevYear = yearToday;
+        if (prevMonth === 0) {
+            prevMonth = 12;
+            prevYear -= 1;
+        }
+
+        let daysInPrevMonth = new Date(prevYear, prevMonth, 0).getDate();
+        days.innerHTML = daysInPrevMonth + dayToday - day;
+    }
+
+    years.innerHTML = inputYear;
+});
