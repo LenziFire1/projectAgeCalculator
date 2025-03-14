@@ -4,17 +4,13 @@ let days = document.querySelector(".days");
 let btn = document.querySelector("button");
 let date = document.querySelector(".date");
 
-// console.log(years.innerHTML)
-// console.log(months.innerHTML)
-// console.log(days.innerHTML)
 let currentDate = new Date();
-console.log(currentDate);
 
 btn.addEventListener('click', function(e) {
     e.preventDefault();  
 
     let newDate = date.value;
-    let year = newDate.slice(0,4);
+    let year = +newDate.slice(0,4);
     let inputMonth = +newDate.slice(5,7); 
     let day = +newDate.slice(8,10);
 
@@ -23,18 +19,23 @@ btn.addEventListener('click', function(e) {
     let dayToday = currentDate.getDate();
     
     let inputYear = yearToday - year;
-    
+    let inputMonthCalc, inputDayCalc;
+
     if (monthsToday >= inputMonth) {
-        months.innerHTML = monthsToday - inputMonth;         
+        inputMonthCalc = monthsToday - inputMonth;         
     } else {
         inputYear -= 1;
-        months.innerHTML = 12 + monthsToday - inputMonth;
+        inputMonthCalc = 12 + monthsToday - inputMonth;
     }
 
     if (dayToday >= day) {
-        days.innerHTML = dayToday - day;         
+        inputDayCalc = dayToday - day;         
     } else {
-        months.innerHTML -= 1;
+        inputMonthCalc -= 1;
+        if (inputMonthCalc < 0) {
+            inputMonthCalc = 11;
+            inputYear -= 1;
+        }
 
         let prevMonth = monthsToday - 1;
         let prevYear = yearToday;
@@ -44,8 +45,10 @@ btn.addEventListener('click', function(e) {
         }
 
         let daysInPrevMonth = new Date(prevYear, prevMonth, 0).getDate();
-        days.innerHTML = daysInPrevMonth + dayToday - day;
+        inputDayCalc = daysInPrevMonth + dayToday - day;
     }
 
     years.innerHTML = inputYear;
+    months.innerHTML = inputMonthCalc;
+    days.innerHTML = inputDayCalc;
 });
